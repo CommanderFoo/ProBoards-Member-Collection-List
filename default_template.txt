@@ -1,0 +1,13 @@
+<div class="collection-list-header">Collection List</div>
+<div class="collection-list-items">
+	{foreach item}
+		{if editing}
+			<input type="checkbox" value="{item.value}" />{item.name}<br />
+		{else}
+			{item.name}<br />
+		{/if}
+	{/foreach}
+</div>
+<div class="collection-list-footer">
+	<button id="save-collection-list">Edit List</button>
+</div>
